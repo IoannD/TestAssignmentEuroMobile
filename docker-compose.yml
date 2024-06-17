@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  testassignmenteuromobile.api:
+    image: ${DOCKER_REGISTRY-}testassignmenteuromobileapi
+    build:
+      context: .
+      dockerfile: TestAssignmentEuroMobile.API/Dockerfile
